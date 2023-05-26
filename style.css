@@ -33,7 +33,7 @@ body {
 
     background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg), var(--DARK-CYAN);
     background-repeat: no-repeat, no-repeat;
-    background-position: -260px -500px, 710px 300px;
+    background-position: -270px -450px, 710px 260px;
     background-size: 875px auto;
     background-color: var(--DARK-CYAN);
     display: flex;
