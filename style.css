@@ -30,6 +30,15 @@ body {
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+
+    background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg), var(--DARK-CYAN);
+    background-repeat: no-repeat, no-repeat;
+    background-position: -220px -500px, 650px 300px;
+    background-size: 875px auto;
+    background-color: var(--DARK-CYAN);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*
@@ -83,7 +92,90 @@ h6 {
     --DARK-GRAYISH-BLUE: hsl(227, 10%, 46%);
 
     --DARK-BLUE: hsl(0, 0%, 59%);
+    --DARK-BLUE-BORDER: hsla(0, 0%, 59%, 0.26);
 
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
+}
+
+.profile-card {
+    background-color: white;
+    width: 19.45rem;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+header {
+    position: relative;
+}
+
+.img-wrapper {
+    position: absolute;
+    bottom: -53px;
+    left: calc(50% - 53px);
+    border: 5px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.95rem;
+}
+
+.name-and-age {
+    display: flex;
+}
+
+.name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--VERY-DARK-DESATURATED-BLUE);
+    margin-right: 0.45rem;
+}
+
+.age {
+    font-size: 1rem;
+    color: var(--DARK-GRAYISH-BLUE);
+}
+
+.residence {
+    color: var(--DARK-GRAYISH-BLUE);
+    font-size: 0.8rem;
+    margin-block: 0.26rem 1.22rem;
+}
+
+.social-media-stats {
+    display: flex;
+    justify-content: space-evenly;
+    padding-block: 1.2rem 1.23rem;
+    border-top: 1px solid var(--DARK-BLUE-BORDER);
+}
+
+.stats-column {
+    text-align: center;
+    padding-right: 0.3rem;
+}
+
+.number-of {
+    font-weight: 700;
+    color: var(--VERY-DARK-DESATURATED-BLUE);
+}
+
+.subject {
+    font-size: 0.6rem;
+    color: var(--DARK-GRAYISH-BLUE);
+    letter-spacing: 0.07rem;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg), var(--DARK-CYAN);
+        background-repeat: no-repeat, no-repeat;
+        background-position: -650px -500px, 150px 300px;
+        background-size: 875px auto;
+    }
 }
